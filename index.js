@@ -169,6 +169,7 @@ async function tentarLetra(event) {
         if (data.status_jogo === 'Derrota') {
             document.body.classList.add('lose')
             gameMessage.style.color = "#b71c1c"
+            gameMessage.innerHTML = `Você perdeu! A palavra era: <strong>${data.palavra.toUpperCase()}</strong>`;
         } else {
             document.body.classList.add('win')
             gameMessage.style.color = "#1b5e20"
