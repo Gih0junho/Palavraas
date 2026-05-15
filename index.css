@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #121213;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 420px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 43px;
+    border: 1px solid #3a3a3c;
+    background: #121213;
+    color: rgb(148, 8, 8);
+    text-align: center;
+    font-size: 16px;
+    font-weight:Italic;
+}
+
+input:focus {
+    outline: none;
+    border-color: #565758;
+}
+
+/* PALAVRA (estilo quadradinhos Termo) */
+.word-slots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 25px 0;
+}
+
+.letter-slot {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #3a3a3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #121213;
+}
+
+/* STATUS */
+.status-info {
+    font-size: 14px;
+    color: #d7dadc;
+    margin-top: 10px;
+}
+
+/* DICA */
+.hint-box {
+    background: #2a2a2c;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #d7dadc;
+}
+
+/* BOTÃO */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #538d4e;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6aaa64;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 15px;
+    font-size: 12px;
+    color: #818384;
+}
+
+/* RESULTADO (TERMO STYLE) */
+.win .letter-slot {
+    background: #6aaa64;
+    border-color: #6aaa64;
+}
+
+.lose .letter-slot {
+    background: #3a3a3c;
+    border-color: #3a3a3c;
+}
